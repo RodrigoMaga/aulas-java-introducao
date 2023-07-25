@@ -23,5 +23,6 @@ public class AppMain {
 //        System.out.println(legalAges[9]);
 //        System.out.println(legalAges[10]);
         EmailService.sendToSpecificDomain();
+
     }
 }

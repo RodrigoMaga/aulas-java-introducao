@@ -3,15 +3,18 @@ package org.example.repositories;
 public class AlunoRepository {
     public static String[] findAllEmails() {
         return new String[]{
-                "fulano@hotmail.com",
-                "ciclano@hotmail.com",
-                "ronaldinho@hotmail.com",
-                "bolsonaro@proton.com",
                 "lula@proton.com",
-                "mateus@proton.com",
-                "rodrigo@gmail.com",
                 "linkinpark4ever@gmail.com",
+                "fulano@hotmail.com",
+                "certo@gmail.com",
+                "bolsonaro@proton.com",
                 "rockwins@gmail.com",
+                "Hello@gmail.com",
+                "ronaldinho@hotmail.com",
+                "pinkfloydrules@gmail.com",
+                "mateus@proton.com",
+                "ciclano@hotmail.com",
+                "rodrigo@gmail.com",
                 "ggwp@bol.com"
         };
     }
