@@ -15,25 +15,19 @@ public class EmailService {
 
         for (String email : emails) {
 
-            boolean isGmail = email.endsWith("gmail.com");
-            boolean isHotmail = email.endsWith("hotmail.com");
-            boolean isProton = email.endsWith("proton.com");
-            boolean isBol = email.endsWith("bol.com");
-
-
-            if (isGmail) {
+            if (email.endsWith("gmail.com")) {
                 ArrayHelper.addElementString(emailGmail, email);
             }
 
-            if (isHotmail) {
+            if (email.endsWith("hotmail.com")) {
                 ArrayHelper.addElementString(emailHotmail, email);
             }
 
-            if (isProton) {
+            if (email.endsWith("proton.com")) {
                 ArrayHelper.addElementString(emailProton, email);
             }
 
-            if (isBol) {
+            if (email.endsWith("bol.com")) {
                 ArrayHelper.addElementString(emailBol, email);
             }
         }
@@ -42,10 +36,10 @@ public class EmailService {
         printEmails(emailProton,"proton");
         printEmails(emailBol,"bol");
     }
-    public static void printEmails(String[] domainEmails, String dominio) {
+    public static void printEmails(String[] domainEmails, String domain) {
         for (String domainEmail : domainEmails) {
             if (domainEmail != null) {
-                System.out.println("enviando para o domínio " + dominio + ": " + domainEmail);
+                System.out.println("enviando para o domínio " + domain + ": " + domainEmail);
             }
         }
     }

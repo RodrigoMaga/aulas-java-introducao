@@ -11,4 +11,9 @@ public class InputUserTerminal {
 //        return grade; mesma coisa da linha abaixo
         return scanner.nextInt();
     }
+    public static String askString(String input) {
+        Scanner scanner = new Scanner(System.in);
+        System.out.print(input);
+        return scanner.next();
+    }
 }
