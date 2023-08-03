@@ -1,4 +1,4 @@
-package org.example.classes;
+package org.example.aulas.classes;
 
 public class Aluno {
     public String name;

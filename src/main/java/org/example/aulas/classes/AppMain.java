@@ -1,4 +1,4 @@
-package org.example.classes;
+package org.example.aulas.classes;
 
 import org.example.helpers.InputUserTerminal;
 

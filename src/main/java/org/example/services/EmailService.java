@@ -1,12 +1,12 @@
 package org.example.services;
 
 import org.example.helpers.ArrayHelper;
-import org.example.repositories.AlunoRepository;
+import org.example.repositories.StudentRepository;
 
 public class EmailService {
     public static void sendToSpecificDomain() {
         //enviando para o domínio ?: {email_usuario}
-        String[] emails = AlunoRepository.findAllEmails();
+        String[] emails = StudentRepository.findAll();
         String[] emailGmail = new String[emails.length];
         String[] emailHotmail = new String[emails.length];
         String[] emailProton = new String[emails.length];
