@@ -1,34 +1,35 @@
 package org.example.services;
 
+import org.example.domain.Student;
 import org.example.helpers.ArrayHelper;
 import org.example.repositories.StudentRepository;
 
 public class EmailService {
     public static void sendToSpecificDomain() {
         //enviando para o domínio ?: {email_usuario}
-        String[] emails = StudentRepository.findAll();
-        String[] emailGmail = new String[emails.length];
-        String[] emailHotmail = new String[emails.length];
-        String[] emailProton = new String[emails.length];
-        String[] emailBol = new String[emails.length];
+        Student[] students = StudentRepository.findAll();
+        String[] emailGmail = new String[students.length];
+        String[] emailHotmail = new String[students.length];
+        String[] emailProton = new String[students.length];
+        String[] emailBol = new String[students.length];
 
 
-        for (String email : emails) {
+        for (Student student : students) {
 
-            if (email.endsWith("gmail.com")) {
-                ArrayHelper.addElementString(emailGmail, email);
+            if (student.email.endsWith("gmail.com")) {
+                ArrayHelper.addElementString(emailGmail, student.email);
             }
 
-            if (email.endsWith("hotmail.com")) {
-                ArrayHelper.addElementString(emailHotmail, email);
+            if (student.email.endsWith("hotmail.com")) {
+                ArrayHelper.addElementString(emailHotmail, student.email);
             }
 
-            if (email.endsWith("proton.com")) {
-                ArrayHelper.addElementString(emailProton, email);
+            if (student.email.endsWith("proton.com")) {
+                ArrayHelper.addElementString(emailProton, student.email);
             }
 
-            if (email.endsWith("bol.com")) {
-                ArrayHelper.addElementString(emailBol, email);
+            if (student.email.endsWith("bol.com")) {
+                ArrayHelper.addElementString(emailBol, student.email);
             }
         }
         printEmails(emailGmail, "gmail");

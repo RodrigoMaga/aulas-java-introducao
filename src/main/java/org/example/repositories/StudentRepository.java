@@ -7,9 +7,8 @@ public class StudentRepository {
         //instanciar = usar "new"
         Student rodrigo = new Student();
         Student mateus = new Student();
-        Student cesar = new Student();
         Student gustavo = new Student();
-
+        Student cesar = new Student();
 
         //Simples atribuição
         rodrigo.name = "Rodrigo Magalhaes Nunes";
