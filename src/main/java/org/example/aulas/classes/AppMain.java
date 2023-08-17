@@ -22,5 +22,6 @@ public class AppMain {
         System.out.println("Nome: " + student.name);
         System.out.println("E-mail: " + student.email);
         System.out.println("Idade: " + student.age);
+
     }
 }
